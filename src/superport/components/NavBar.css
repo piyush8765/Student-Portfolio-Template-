@@ -38,12 +38,11 @@
   font-size: 1.8rem;
   font-weight: 900;
   background: linear-gradient(90deg, #16b9ff, #16b9ff, #16b9ff);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
-/* ================= DESKTOP NAV ================= */
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -83,7 +82,6 @@
   background: linear-gradient(90deg, #38bdf8, #a78bfa);
 }
 
-/* ================= THEME BUTTON ================= */
 .theme-toggle {
   background: none;
   border: none;
@@ -99,12 +97,10 @@
   color: #020617;
 }
 
-/* ================= MOBILE NAV ================= */
 .mobile-bottom-nav {
   display: none;
 }
 
-/* ================= MOBILE BUTTON ================= */
 .mobile-btn {
   font-size: 1.5rem;
   opacity: 0.6;
@@ -122,7 +118,6 @@
   opacity: 1;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .logo {
     margin: auto;
