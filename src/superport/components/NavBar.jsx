@@ -8,6 +8,7 @@ import {
   FaMoon,
   FaSun
 } from "react-icons/fa";
+
 import "./Navbar.css";
 
 const NavBar = ({ portfolioName, isDark, setIsDark, active, setActive }) => {
@@ -22,7 +23,7 @@ const NavBar = ({ portfolioName, isDark, setIsDark, active, setActive }) => {
 
   return (
     <>
-      {/* ===== TOP HEADER (DESKTOP) ===== */}
+     
       <header className={`top-header ${isDark ? "dark-ui" : "light-ui"}`}>
         <div className="logo" onClick={() => scrollToSection("home")}>
           {portfolioName}
@@ -34,14 +35,11 @@ const NavBar = ({ portfolioName, isDark, setIsDark, active, setActive }) => {
           <NavItem text="Projects" active={active === "projects"} onClick={() => scrollToSection("projects")} />
           <NavItem text="Skills" active={active === "skills"} onClick={() => scrollToSection("skills")} />
           <NavItem text="Contact" active={active === "contact"} onClick={() => scrollToSection("contact")} />
-{/* 
-          <button className="theme-toggle" onClick={() => setIsDark(!isDark)}>
-            {isDark ? <FaSun /> : <FaMoon />}
-          </button> */}
+
         </nav>
       </header>
 
-      {/* ===== MOBILE BOTTOM NAV ===== */}
+   
       <div className={`mobile-bottom-nav ${isDark ? "dark-ui" : "light-ui"}`}>
         <MobileBtn icon={<FaHome />} active={active === "home"} onClick={() => scrollToSection("home")} />
         <MobileBtn icon={<FaUser />} active={active === "about"} onClick={() => scrollToSection("about")} />
@@ -49,10 +47,7 @@ const NavBar = ({ portfolioName, isDark, setIsDark, active, setActive }) => {
         <MobileBtn icon={<FaTools />} active={active === "skills"} onClick={() => scrollToSection("skills")} />
         <MobileBtn icon={<FaEnvelope />} active={active === "contact"} onClick={() => scrollToSection("contact")} />
 
-        {/* <MobileBtn
-          icon={isDark ? <FaSun /> : <FaMoon />}
-          onClick={() => setIsDark(!isDark)}
-        /> */}
+      
       </div>
     </>
   );
