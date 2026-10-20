@@ -6,21 +6,18 @@
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* ================= DARK GLASS ================= */
 .dark-ui {
   background: rgba(10, 10, 15, 0.65);
   color: #ffffff;
   border-color: rgba(255,255,255,0.12);
 }
 
-/* ================= LIGHT GLASS ================= */
 .light-ui {
   background: rgba(255, 255, 255, 0.65);
   color: #020617;
   border-color: rgba(0,0,0,0.08);
 }
 
-/* ================= TOP HEADER ================= */
 .top-header {
   position: fixed;
   top: 0;
@@ -33,7 +30,7 @@
   z-index: 1000;
 }
 
-/* ================= LOGO ================= */
+
 .logo {
   font-size: 1.8rem;
   font-weight: 900;
